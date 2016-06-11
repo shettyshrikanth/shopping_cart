@@ -1,8 +1,7 @@
 package com.shopping
 
 trait Fruit {
-  val price : BigDecimal
-  
+  val price : BigDecimal  
 }
 
 object Apple extends Fruit {
