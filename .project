@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>sample_proj</name>
+  <name>shopping_cart</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>
