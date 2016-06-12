@@ -3,23 +3,24 @@ package com.shopping
 import org.junit.runner.RunWith
 import org.specs2.mutable.Specification
 import org.specs2.runner.JUnitRunner
+import Shop._
 
 @RunWith(classOf[JUnitRunner])
 class ShopTest extends Specification {
 
   "Shop which only sells apples and oranges " should {
     "Sell only Apples And Oranges" in {
-      Shop(Apple, Orange) must contain(exactly(Apple, Orange))
+      Shop.getItems must contain(exactly(Apple, Orange))
     }
   }
 
   "Apples cost 60p and Oranges cost 25p, therefore shop " should {
     "Sell Apple for 60p each " in {
-      Shop(Apple, Orange).head.price mustEqual 0.60
+      Shop.getItems.head.price mustEqual 0.60
     }
 
     "Sell Orange for 25p each " in {
-      Shop(Apple, Orange)(1).price mustEqual 0.25
+      Shop.getItems(1).price mustEqual 0.25
     }
   }
 

@@ -1,6 +1,7 @@
 package com.shopping
 
 import math._
+import Shop._
 
 object Offer {
   type Discount = BigDecimal
